@@ -1,0 +1,21 @@
+securityRealm:
+  updateCenter:
+    sites:
+      - id: "default"
+        url: "https://updates.jenkins-zh.cn/update-center.json"
+  ldap:
+    configurations:
+      - server: ldap.acme.com
+        rootDN: dc=acme,dc=fr
+        managerDN: "manager"
+        managerPasswordSecret: ${LDAP_PASSWORD}
+        userSearch: "(&(objectCategory=User)(sAMAccountName={0}))"
+        groupSearchFilter: "(&(cn={0})(objectclass=group))"
+        groupMembershipStrategy:
+          fromGroupSearch:
+            filter: "(&(objectClass=group)(|(cn=GROUP_1)(cn=GROUP_2)))"
+    cache:
+      size: 100
+      ttl: 10
+    userIdStrategy: CaseInsensitive
+    groupIdStrategy: CaseSensitive

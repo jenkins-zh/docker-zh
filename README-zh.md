@@ -37,6 +37,7 @@
 | 配置即代码 + 流水线 + K8s | `jenkins-k8s.war` | `jenkinszh/jenkins-k8s:2.204.5` [![Docker Pulls](https://img.shields.io/docker/pulls/jenkinszh/jenkins-k8s.svg)](https://hub.docker.com/r/jenkinszh/jenkins-k8s/tags) |
 | BlueOcean + 多分支流水线 | `blueocean-zh.war` | `jenkinszh/blueocean-zh:2.204.5` [![Docker Pulls](https://img.shields.io/docker/pulls/jenkinszh/blueocean-zh.svg)](https://hub.docker.com/r/jenkinszh/blueocean-zh/tags) |
 | 多分支流水线（GitHub、GitLab、Bitbucket）| `jenkins-multi-pipeline-zh.war` | `jenkinszh/jenkins-multi-pipeline-zh:2.204.5` [![Docker Pulls](https://img.shields.io/docker/pulls/jenkinszh/jenkins-multi-pipeline-zh.svg)](https://hub.docker.com/r/jenkinszh/jenkins-multi-pipeline-zh/tags) |
+| OIDC | | `jenkinszh/jenkins-oic-auth:2.249.1` [![Docker Pulls](https://img.shields.io/docker/pulls/jenkinszh/jenkins-oic-auth.svg)](https://hub.docker.com/r/jenkinszh/jenkins-oic-auth/tags) |
 
 想要贡献一份配方？请在[这里](formulas/README-zh.md)学习如何提交配方。
 

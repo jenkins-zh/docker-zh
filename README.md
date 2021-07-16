@@ -34,6 +34,7 @@ Below are some out-of-the-box solutions which I call them formulas
 | CASC + Pipeline + K8s | `jenkins-k8s.war` | `jenkinszh/jenkins-k8s:2.204.5` [![Docker Pulls](https://img.shields.io/docker/pulls/jenkinszh/jenkins-k8s.svg)](https://hub.docker.com/r/jenkinszh/jenkins-k8s/tags) |
 | BlueOcean + Multi-branch Pipeline | `blueocean-zh.war` | `jenkinszh/blueocean-zh:2.204.5` [![Docker Pulls](https://img.shields.io/docker/pulls/jenkinszh/blueocean-zh.svg)](https://hub.docker.com/r/jenkinszh/blueocean-zh/tags) |
 | Multi-branch Pipeline（GitHub、GitLab、Bitbucket）| `jenkins-multi-pipeline-zh.war` | `jenkinszh/jenkins-multi-pipeline-zh:2.204.5` [![Docker Pulls](https://img.shields.io/docker/pulls/jenkinszh/jenkins-multi-pipeline-zh.svg)](https://hub.docker.com/r/jenkinszh/jenkins-multi-pipeline-zh/tags) |
+| OIDC | | `jenkinszh/jenkins-oic-auth:2.249.1` [![Docker Pulls](https://img.shields.io/docker/pulls/jenkinszh/jenkins-oic-auth.svg)](https://hub.docker.com/r/jenkinszh/jenkins-oic-auth/tags) |
 
 Want to contribute a formula? Please learn how to create it from [here](formulas/README.md).
 

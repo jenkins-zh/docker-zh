@@ -1,0 +1,37 @@
+bundle:
+  groupId: "io.github.linuxsuren"
+  artifactId: "jenkins-ldap"
+  description: "Jenkins with Configuration as Code"
+  vendor: "Chinese Jenkins Community"
+buildSettings:
+  docker:
+    base: "jenkins/jenkins:{{.version}}"
+    tag: "jenkinszh/jenkins-ldap:{{.version}}"
+    build: true
+war:
+  groupId: "org.jenkins-ci.main"
+  artifactId: "jenkins-war"
+  source:
+    version: {{.version}}
+plugins:
+  - groupId: "org.jenkins-ci.plugins"
+    artifactId: "localization-zh-cn"
+    source:
+      version: 1.0.24
+  - groupId: "io.jenkins"
+    artifactId: "configuration-as-code"
+    source:
+      version: "1.46"
+  - groupId: "org.jenkins-ci.plugins"
+    artifactId: "ldap"
+    source:
+      version: "2.2"
+casc:
+  - id: "jcasc"
+    source:
+      dir: casc/oic-auth.yaml
+groovyHooks:
+  - type: "init"
+    id: "initScripts"
+    source:
+      dir: cwp-init.groovy
